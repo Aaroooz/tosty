@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0; /* Verde claro */
+    color: #333; /* Color de texto oscuro */
+}
+
+header {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(4, 59, 25);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4caf50; /* Verde */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+ul li {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.btn-regresar {
+    display: inline-block;
+    background-color: #27ae60; /* Verde oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.bt-regresar:hover {
+    background-color: #219653; /* Verde más oscuro al pasar el mouse */4
+}
+.bt-regresar {
+    display: inline-block;
+    background-color: #cf1251; /* Verde oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.bt-regresar:hover {
+    background-color: #f821a5; /* Verde más oscuro al pasar el mouse */4
+}

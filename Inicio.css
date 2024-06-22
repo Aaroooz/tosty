@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #47684f; /* Fondo gris claro */
+}
+
+section#inicio {
+    padding: 50px 0;
+}
+header {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(4, 59, 25);
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los recuadros */
+    gap: 20px; /* Espacio entre los recuadros */
+}
+
+.content-box {
+    background-color: #b6e6b5; /* Fondo azul claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: calc(50% - 20px);
+    position: relative; /* Para que la posición absoluta sea relativa a este contenedor */
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+}
+
+.content-box h2 {
+    color: #333; /* Texto gris oscuro */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    color: #666; /* Texto gris */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content-box ul {
+    color: #666; /* Texto gris */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.content-image {
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    border-radius: 10px;
+    margin-top: auto; /* Mueve la imagen hacia la parte inferior */
+}
+
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+}
+.btn-regresar {
+    display: inline-block;
+    background-color: #27ae60; /* Verde oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #219653; /* Verde más oscuro al pasar el mouse */
+}
+header {
+    background-color: #47684f; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

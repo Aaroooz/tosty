@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción de Empresa</title>
+    <link rel="stylesheet" href="Introducción.css">
+    <link rel="shortcut icon" href="Img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>TOSTY CRAZY</h1>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Introducción.html">Página principal</a></li>
+                <li><a href="Servicio.html">Servicios</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Bienvenido a nuestra empresa</h2>
+        <p>Somos una empresa dedicada a la venta de tostilocos</p>
+    </section>
+    <div class="imagen-centralizada">
+        
+
+<div class="gallery">
+    <!-- Galería de imágenes -->
+    <img src="Img/04.jpg" alt="">
+    <img src="Img/03.jpg" alt="">
+    <img src="Img/01.jpg" alt="">
+    <img src="Img/02.jpg" alt="">
+    <img src="Img/234.jpg" alt="">
+    <img src="Img/235.jpg" alt="">
+
+  </div>
+  
+  <div class="overlay" id="overlay">
+    <!-- Superposición para mostrar la imagen a pantalla completa -->
+    <img id="selectedImage" src="" alt="Imagen en pantalla completa">
+  </div>
+  
+  <script>
+    // Seleccionar elementos del DOM
+    const overlay = document.getElementById('overlay'); // Superposición
+    const selectedImage = document.getElementById('selectedImage'); // Imagen en pantalla completa
+    const images = document.querySelectorAll('.gallery img'); // Imágenes de la galería
+  
+    // Agregar event listeners a cada imagen de la galería
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        // Al hacer clic en una imagen de la galería:
+        const imgSrc = img.getAttribute('src'); // Obtener la ruta de la imagen
+        selectedImage.setAttribute('src', imgSrc); // Mostrar la imagen en la superposición
+        overlay.style.display = 'flex'; // Mostrar la superposición
+      });
+    });
+  
+    // Agregar event listener a la superposición para cerrarla al hacer clic fuera de la imagen
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none'; // Ocultar la superposición
+    });
+  
+    // Variables y función para el efecto de presentación de diapositivas
+    let index = 0; // Índice para controlar la posición de las imágenes en la galería
+    function showImage() {
+      images.forEach((img, i) => {
+        img.style.transform = `translateX(-${index * 100}%)`; // Desplazar las imágenes horizontalmente
+      });
+      index = (index + 1) % images.length; // Avanzar al siguiente índice, reiniciando si alcanza el final
+    }
+  
+    setInterval(showImage, 3000); // Cambiar la imagen cada 3 segundos
+  </script>
+  
+
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

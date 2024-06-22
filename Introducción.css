@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(4, 59, 25);
+    text-decoration: none;
+}
+
+section#intro {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #27ae60; /* Verde más oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.imagen-centralizada {
+    text-align: center;
+    margin-top: 1px; /* Puedes ajustar el margen según sea necesario */
+}
+
+.imagen-centralizada img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+}
+/* Estilos para la galería de imágenes */
+.gallery {
+    border-radius: 30px; /* Borde redondeado para la galería */
+    display: flex; /* Muestra las imágenes en línea */
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo de la galería */
+    margin: 0px auto; /* Margen superior e inferior automático y margen izquierdo y derecho automático */
+  }
+  
+  /* Estilos para las imágenes dentro de la galería */
+  .gallery img {
+    width: 100%; /* Las imágenes ocupan todo el ancho de su contenedor */
+    transition: transform 0.5s ease-in-out; /* Transición suave para la transformación */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+  }
+  
+  /* Estilos para la superposición que muestra la imagen a pantalla completa */
+  .overlay {
+    position: fixed; /* Posición fija en la ventana del navegador */
+    top: 0; /* Alineado desde la parte superior */
+    left: 0; /* Alineado desde la parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo gris semi-transparente */
+    display: none; /* Por defecto, la superposición está oculta */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    z-index: 999; /* Establece la superposición por encima de otros elementos */
+  }
+  
+  /* Estilos para la imagen dentro de la superposición */
+  .overlay img {
+    max-width: 100%; /* Ancho máximo del 80% del tamaño de la superposición */
+    max-height: 100%; /* Altura máxima del 80% del tamaño de la superposición */
+  }
+  
